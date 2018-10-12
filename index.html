@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>PTO V2</title>
+     </head>
+     <body>
+          <h1>PTO V2</h1>
+          <p>this program calculates PTO in years and returns them in weeks</p>
+          <ol>
+               <li>START</li>
+          </ol>
+          <form>
+               <input type="button" value="submit" onclick="yearstoWeeks ()">
+          </form>
+          <span id="output"></span>
+     </body>
+     <script>
+          function yearstoWeeks(){
+               var paidYears = 2;
+               var paidHours = 104;
+               var output = document.getElementById('output');
+               output.innerHTML = 'Your total number of weeks in pto is  '+ paidHours / paidYears + ' good day.'
+          }
+     </script>
+</html>
